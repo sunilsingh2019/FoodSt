@@ -42,6 +42,16 @@ jQuery(document).ready(function ($) {
   // lightcase
   $("a[data-rel^=lightcase]").lightcase();
 
+  $(".welcome-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 7000,
+  });
+
   $(".recipes-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
