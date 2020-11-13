@@ -60,6 +60,12 @@ jQuery(document).ready(function ($) {
     dots: true,
     autoplay: true,
     autoplaySpeed: 7000,
+    responsive: [{
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1
+      }
+    }, ]
   });
 
   //limit characters
