@@ -117,14 +117,14 @@ jQuery(document).ready(function ($) {
     $("#menu").toggleClass("active");
 
     if ($("#menu").hasClass("active")) {
-      $("html").addClass("side-menu-toggled");
+      $("html").addClass("overflowYStop");
       $(".side-menu-bg").addClass("active").animate({
           opacity: 1,
         },
         400
       );
     } else {
-      $("html").removeClass("side-menu-toggled");
+      $("html").removeClass("overflowYStop");
       $("#menu").removeClass("active");
     }
   });
