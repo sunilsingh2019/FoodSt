@@ -361,31 +361,22 @@ html.overflowYScroll {
     }
 }
 
-.body {
+body {
     font-family: Poppins, sans-serif;
     font-size: 15px;
     overflow-x: hidden;
     max-width: 100%
 }
 
-.body ::-moz-selection {
+body ::-moz-selection {
     color: #fff;
     background-color: #38b54d
 }
 
-.body ::-moz-selection,
-.body ::selection {
+body ::-moz-selection,
+body ::selection {
     color: #fff;
     background-color: #38b54d
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Poppins, sans-serif
 }
 
 a {
