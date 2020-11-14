@@ -1,4 +1,7 @@
 jQuery(document).ready(function ($) {
+  if (!$('body').hasClass('homepage')) {
+    $('link.homepage-only').remove();
+  }
   //smooth scroll
   $("a.page-scroll").bind("click", function (event) {
     var $anchor = $(this);
