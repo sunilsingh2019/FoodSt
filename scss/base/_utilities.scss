@@ -96,12 +96,14 @@
 
 .heading {
   &-title {
+    font-family: $font-1;
     font-size: 42px;
     font-weight: 200;
     line-height: 42px;
     margin-bottom: 30px;
 
     &-lg {
+      font-family: $font-1;
       font-size: 55px;
       font-weight: 300;
       margin-bottom: 5px;

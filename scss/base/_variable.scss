@@ -17,8 +17,7 @@ $font-4: "Gotham";
 
 $font-awesome: "Font Awesome 5 Free";
 
-$imgPath: "../../images";
-$fontPath: "../fonts";
+$imgPath: "../images";
 
 //mixin for responsive css
 @mixin respond($breakpoint) {

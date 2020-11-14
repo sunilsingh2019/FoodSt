@@ -42,8 +42,6 @@ jQuery(document).ready(function ($) {
     pause: "false",
   });
 
-  // lightcase
-  $("a[data-rel^=lightcase]").lightcase();
 
   $(".welcome-slider").slick({
     slidesToShow: 1,
@@ -139,11 +137,6 @@ jQuery(document).ready(function ($) {
     var menu = $(this).children("ul");
 
     $this.toggleClass("open");
-  });
-
-  // animate on scroll init
-  AOS.init({
-    once: true,
   });
 
   $(".carousel-overlay-title .heading-fancy").addClass(

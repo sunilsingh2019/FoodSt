@@ -21,9 +21,9 @@ html {
 
 
 .body {
+  font-family: $font-1;
   font-size: 15px;
   overflow-x: hidden;
-  font-family: $font-1;
   max-width: 100%;
 
   *::-moz-selection,
@@ -31,6 +31,15 @@ html {
     color: #fff;
     background-color: $color-main;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-1;
 }
 
 a {
@@ -82,6 +91,10 @@ p {
 
 .container.row {
   margin: 0 auto;
+}
+
+.row {
+  width: 100%;
 }
 
 .container {

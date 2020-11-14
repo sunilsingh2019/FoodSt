@@ -13,7 +13,7 @@ gulp.task('styles', async function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({
-            outputStyle: 'compressed'
+            outputStyle: 'expanded'
         }))
         .pipe(cleanCSS({
             compatibility: 'ie8',
@@ -26,7 +26,7 @@ gulp.task('styles', async function () {
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
         .pipe(rename('style.min.css'))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./build/css/'));
+        .pipe(gulp.dest('./assets/'));
 });
 
 gulp.task('serve', async function () {
@@ -36,14 +36,14 @@ gulp.task('serve', async function () {
 gulp.task('default', gulp.series('styles', 'serve'));
 
 gulp.task('pack-js', function () {
-    return gulp.src(['./assets/js/jquery-3.3.1.min.js', './assets/js/bootstrap.bundle.min.js', './assets/js/*.js'])
+    return gulp.src(['./src/js/jquery-3.3.1.min.js', './src/js/bootstrap.bundle.min.js', './src/js/*.js'])
         .pipe(concat('bundle.js'))
         .pipe(minify())
-        .pipe(gulp.dest('./build/js'));
+        .pipe(gulp.dest('./assets/'));
 });
 
 gulp.task('pack-css', function () {
-    return gulp.src(['./assets/css/bootstrap.min.css', './assets/css/*.css'])
+    return gulp.src(['./src/css/bootstrap.min.css', './src/css/*.css'])
         .pipe(concat('bundle-min.css'))
         .pipe(cleanCSS({
             compatibility: 'ie8',
@@ -53,7 +53,7 @@ gulp.task('pack-css', function () {
                 }
             }
         }))
-        .pipe(gulp.dest('./build/css'));
+        .pipe(gulp.dest('./assets/'));
 });
 
 gulp.task('bundle', gulp.series('pack-js', 'pack-css'));
