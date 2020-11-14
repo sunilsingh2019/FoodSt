@@ -1,0 +1,124 @@
+.footer {
+    color: #fff;
+    background-color: #000;
+
+    &-top {
+        padding: 80px 20px;
+
+        &-col {
+            padding: 15px;
+        }
+
+        &-logo {
+            width: 200px;
+            margin-bottom: 50px;
+        }
+
+        &-social {
+            a {
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                line-height: 48px;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 8px;
+                background-color: #fff;
+
+                &:hover {
+                    background-color: $color-main;
+                }
+            }
+        }
+
+        &-title {
+            color: $color-main;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+
+        &-list {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    font-size: 21px;
+                }
+            }
+        }
+
+        &-form {
+            position: relative;
+
+            input {
+                font-size: 21px;
+                display: block;
+                width: 100%;
+                height: 63px;
+                padding: 18px 22px;
+                border: 0;
+                border-radius: 12px;
+            }
+
+            button[type="submit"] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 60px;
+                height: 100%;
+                padding: 0;
+                background-color: transparent;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+
+                img {
+                    width: 34px;
+                    height: 32px;
+                }
+
+                &:hover,
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    &-bot {
+        font-family: $font-4;
+        padding: 10px 20px;
+        background-color: #707070;
+
+        img {
+            width: 20px;
+            margin-left: 44px;
+        }
+
+        .copyright {
+            font-size: 15px;
+        }
+
+        .designedby {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 1600px) {
+        &-top {
+            &-list {
+                li {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

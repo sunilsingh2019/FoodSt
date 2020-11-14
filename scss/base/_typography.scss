@@ -1,0 +1,386 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$fontPath}/DMSans-Regular.woff2") format("woff2"),
+  url("#{$fontPath}/DMSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$fontPath}/DMSans-Medium.woff2") format("woff2"),
+  url("#{$fontPath}/DMSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$fontPath}/DMSans-Italic.woff2") format("woff2"),
+  url("#{$fontPath}/DMSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("#{$fontPath}/Gotham-Book.woff2") format("woff2"),
+  url("#{$fontPath}/Gotham-Book.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$fontPath}/DMSans-Bold.woff2") format("woff2"),
+  url("#{$fontPath}/DMSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$fontPath}/DMSans-BoldItalic.woff2") format("woff2"),
+  url("#{$fontPath}/DMSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$fontPath}/DMSans-MediumItalic.woff2") format("woff2"),
+  url("#{$fontPath}/DMSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-Black.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-ExtraBoldItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-ExtraLightItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-BoldItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-ExtraLight.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-ExtraBold.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-Bold.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-BlackItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-LightItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-Thin.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-Italic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-SemiBoldItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-Light.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-Medium.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-SemiBold.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-MediumItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-Regular.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("#{$fontPath}/Jost-ThinItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Jost-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-BlackItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-Bold.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-Black.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-BoldItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-Italic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-ExtraLightItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-ExtraLight.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-ExtraBoldItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-ExtraBold.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-Light.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-MediumItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-Medium.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-LightItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-SemiBold.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-SemiBoldItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-Regular.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-ThinItalic.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("#{$fontPath}/Poppins-Thin.woff2") format("woff2"),
+  url("#{$fontPath}/Poppins-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}

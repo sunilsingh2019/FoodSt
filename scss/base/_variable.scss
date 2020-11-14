@@ -1,0 +1,108 @@
+$color-main: #38B54D;
+$color-sub:#38B54D;
+
+$color-black: #2c2c2c;
+$color-gray: #EBEBEB;
+
+$font-1: "Poppins",
+sans-serif;
+
+$font-2: "Jost",
+sans-serif;
+
+$font-3: "DM Sans",
+sans-serif;
+
+$font-4: "Gotham";
+
+$font-awesome: "Font Awesome 5 Free";
+
+$imgPath: "../../images";
+$fontPath: "../fonts";
+
+//mixin for responsive css
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==phone-min {
+    @media (min-width: 577px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==phone-tabport {
+    @media (min-width: 577px) and (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tabport {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tabport-min {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tabport-tabland {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tabland {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tabland-min {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==smdesktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tabland-smdesktop {
+    @media (min-width: 992px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==smdesktop-min {
+    @media (min-width: 1201px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==bgdesktop {
+    @media (max-width: 1401px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==smdesktop-bgdesktop {
+    @media (min-width: 1201px) and (max-width: 1400px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==bgdesktop-min {
+    @media (min-width: 1401px) {
+      @content;
+    }
+  }
+}

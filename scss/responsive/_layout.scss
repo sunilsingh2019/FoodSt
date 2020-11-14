@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1201px) {
+    .app-lg {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .dis-lg {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .app-md {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .dis-md {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .app-sm {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dis-sm {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .app-xs {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .dis-xs {
+        display: none !important;
+    }
+}
